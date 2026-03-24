@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "Figtree";
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Colors */
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+
+  /* Typography */
+  --ff: "Figtree", sans-serif;
+  --fw-m: 500;
+  --fw-xb: 800;
+
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
+
+  /* Spacing */
+  --spacing-4: 0.25rem;
+  --spacing-8: 0.5rem;
+  --spacing-12: 0.75rem;
+  --spacing-24: 1.5rem;
+}
+
+body {
+  margin: 0;
+  background-color: var(--yellow);
+  font-family: var(--ff);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 87%;
+  max-width: 384px;
+  padding: var(--spacing-24);
+  color: var(--gray-950);
+  background-color: var(--white);
+  border: 1px solid var(--gray-950);
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 0 var(--gray-950);
+}
+
+.box-image {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--spacing-24);
+  gap: var(--spacing-12);
+}
+
+.learning {
+  width: fit-content;
+  padding: var(--spacing-4) var(--spacing-12);
+  background-color: var(--yellow);
+  border-radius: 4px;
+  font-weight: var(--fw-xb);
+  font-size: var(--fs-12);
+}
+
+.publish-date {
+  width: fit-content;
+  font-weight: var(--fw-m);
+  font-size: var(--fs-12);
+}
+
+.blog-title {
+  font-weight: var(--fw-xb);
+  font-size: var(--fs-20);
+}
+
+.blog-title:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.blog-desc {
+  color: var(--gray-500);
+  font-weight: var(--fw-m);
+  font-size: var(--fs-14);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  padding-top: var(--spacing-24);
+  gap: var(--spacing-12);
+}
+
+.author-img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.author-name {
+  font-weight: var(--fw-xb);
+  font-size: var(--fs-14);
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+  color: var(--gray-950);
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .learning {
+    font-size: var(--fs-14);
+  }
+
+  .publish-date {
+    font-size: var(--fs-14);
+  }
+
+  .blog-title {
+    font-size: var(--fs-24);
+  }
+
+  .blog-desc {
+    font-size: var(--fs-16);
+  }
+
+  footer {
+    bottom: 20px;
+  }
+}
