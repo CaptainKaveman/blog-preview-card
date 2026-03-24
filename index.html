@@ -18,7 +18,7 @@
   </head>
   <body>
     <main class="flex">
-      <div class="card">
+      <article class="card">
         <img
           src="./assets/images/illustration-article.svg"
           alt="illustration for blog website"
@@ -26,7 +26,9 @@
         />
         <div class="content">
           <div class="learning">Learning</div>
-          <div class="publish-date">Published 21 Dec 2023</div>
+          <time class="publish-date" datetime="2023-12-21"
+            >Published 21 Dec 2023</time
+          >
           <h1 class="blog-title">HTML & CSS foundations</h1>
 
           <p class="blog-desc">
@@ -34,15 +36,15 @@
             structure, content, and presentation.
           </p>
         </div>
-        <div class="author">
+        <figure class="author">
           <img
             src="./assets/images/image-avatar.webp"
             alt="profile picture for greg hooper"
             class="author-img"
           />
-          <span class="author-name"> Greg Hooper </span>
-        </div>
-      </div>
+          <figcaption class="author-name">Greg Hooper</figcaption>
+        </figure>
+      </article>
     </main>
     <footer>
       <div class="attribution">
